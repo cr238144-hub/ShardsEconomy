@@ -12,8 +12,8 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Build with Maven
-        run: mvn package -f ShardsEconomy/pom.xml
+        run: mvn package
       - uses: actions/upload-artifact@v4
         with:
           name: ShardsEconomy
-          path: ShardsEconomy/target/ShardsEconomy-1.0.0.jar
+          path: target/ShardsEconomy-1.0.0.jar
