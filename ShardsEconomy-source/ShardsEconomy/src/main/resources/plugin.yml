@@ -1,0 +1,46 @@
+name: ShardsEconomy
+version: 1.0.0
+main: com.shards.economy.ShardsEconomy
+api-version: 1.21
+description: Full economy plugin with shop, sell wand, baltop, and daily rewards
+author: LiquidityLarry
+
+commands:
+  shop:
+    description: Open the admin shop
+    usage: /shop
+  balance:
+    description: Check your shard balance
+    usage: /balance [player]
+    aliases: [bal]
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+  baltop:
+    description: View the richest players
+    usage: /baltop
+  daily:
+    description: Claim your daily reward
+    usage: /daily
+  sellwand:
+    description: Give a sell wand
+    usage: /sellwand [player]
+  eco:
+    description: Admin economy commands
+    usage: /eco <give|take|set> <player> <amount>
+
+permissions:
+  shards.shop:
+    default: true
+  shards.balance:
+    default: true
+  shards.pay:
+    default: true
+  shards.baltop:
+    default: true
+  shards.daily:
+    default: true
+  shards.sellwand:
+    default: op
+  shards.eco:
+    default: op
